@@ -1,0 +1,180 @@
+.card {
+  transition: transform 0.3s ease, background-position 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+  cursor: pointer;
+  margin: 10px;
+  transform: scale(1.05);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+
+  .background-div1 {
+    position: relative;
+    overflow: hidden;
+  }
+  .background-div1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #F1F7F9 75%, white 10%);
+  }
+
+
+
+.container-fluid {
+    position: relative;
+  }
+  
+  .purple-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: purple;
+    z-index: -1;
+  }
+  .purple-strip1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: purple;
+    z-index: -1;
+  }
+  
+.background-image {
+    background-image: url('img/background.png');
+    background-size: contain;background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    left: 93%;
+    height: 60%;
+    z-index: -1;
+  }
+
+.background-image2{
+    background-image: url('img/background.png');
+    background-size: contain;background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    left: 0%;
+    height: 60%;
+    z-index: -1;
+}
+@media (max-width: 980px) {
+  .purple-strip {
+    height: 30%;
+    width: 100%;
+}
+.purple-strip1 {
+    height: 30%;
+    width: 100%;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+  #primeiro {
+    flex-direction: column !important;
+  }
+  #primeiro .d-flex {
+    width: 100% !important;
+    border: none !important;
+  }
+  #title1 {
+    border-top: 2px solid rgba(102, 51, 153, 0.349);
+    padding: 15px 0;
+  }
+  #segundo {
+    flex-wrap: wrap;
+  }
+  #segundo .card {
+    margin: 5px 5px !important;
+  }
+  p{
+    text-align: justify;
+  }
+  h1 {
+    text-align: center;
+  }
+  .background-image {
+    display: none;
+  }
+  /* .background-image2 {
+    display: none;
+  } */
+}
+
+@media (max-width: 700px) {
+  .btnp{
+    left: 15% !important;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .btnp{
+    padding: 5px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .btnp{
+    left: 10% !important;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  animation: pulsate 2s infinite;
+  z-index: 9999;
+}
+
+.whatsapp-button:hover {
+  background-color: #ffffff;
+  color: #25d366;
+}
+
+.whatsapp-icon {
+  display: inline-block;
+  background-image: url('https://img.freepik.com/icones-gratis/whatsapp_318-219850.jpg?w=360');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
